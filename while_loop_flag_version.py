@@ -20,7 +20,10 @@ def sing(n):
         if number == 1:
             print("1 bottle of beer on the wall, 1 bottle of beer.")
             print("Take it down, pass it around, no more bottles of beer on the wall!\n")
-            pattern = False  
+            pattern = False 
+
+            if not pattern:
+                break
         else:
             print(f"{number} bottles of beer on the wall, {number} bottles of beer.")
             if number - 1 == 1:
